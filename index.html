@@ -1,87 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Website-Demo</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body id="home">
-    <nav class="navbar background h-nav-resp navpic ">
-        <ul class="nav-list v-class-resp">
-            <div class="logo"><img src="/img/spicy_food.jpg" alt="logo"> </div>
-                <li><a href="#home">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-        </ul>
-        <div class="rightNav v-class-resp">
-            <input type="text" class="text" name="search" id="search" placeholder="Search"  >
-            <button class="btn btn-sm">Search</button>
-        </div>
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+  <body id="home">
+    <nav class="navbar background h-nav-resp navpic">
+      <ul class="nav-list v-class-resp">
+        <div class="logo"><img src="./img/spicy_food.jpg" alt="logo" /></div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="rightNav v-class-resp">
+        <input
+          type="text"
+          class="text"
+          name="search"
+          id="search"
+          placeholder="Search"
+        />
+        <button class="btn btn-sm">Search</button>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
     </nav>
 
     <section class="background firstSection">
-        <div class="food">
-            <box class="container1">
-
-            </box>
-        </div>
+      <div class="food">
+        <box class="container1"> </box>
+      </div>
     </section>
 
     <section class="section2" id="services">
-        <div class="section2box">
-            <box class="container2">
-                <box class="box box1background">Food</box>
-                <box class="box box2background">Fruits</box>
-                <box class="box box3background">Vagetables</box>
-                <box class="box box4background">Dairy</box>
-                <box class="box box5background">Textile</box>
-            </box>
-        </div>
-
+      <div class="section2box">
+        <box class="container2">
+          <box class="box box1background">Food</box>
+          <box class="box box2background">Fruits</box>
+          <box class="box box3background">Vagetables</box>
+          <box class="box box4background">Dairy</box>
+          <box class="box box5background">Textile</box>
+        </box>
+      </div>
     </section>
 
     <section class="Contact" id="contact">
-        <h2 class="text-center">Contact Us</h2>
-        <div class="form">
-            <input class="text-input" type="name" name="name" id="name" placeholder="Enter Your name">
-            <input class="text-input" type="phone" name="Phone" id="Phone" placeholder="Enter Your phone">
-            <input class="text-input" type="email" name="email" id="name" placeholder="Enter Your email">
-            <textarea class="text-input" name="text" id="text" cols="30" rows="10" placeholder="Your Concern"></textarea>
-            <button class="btn btn-dark">Submit</button>
-        </div>
+      <h2 class="text-center">Contact Us</h2>
+      <div class="form">
+        <input
+          class="text-input"
+          type="name"
+          name="name"
+          id="name"
+          placeholder="Enter Your name"
+        />
+        <input
+          class="text-input"
+          type="phone"
+          name="Phone"
+          id="Phone"
+          placeholder="Enter Your phone"
+        />
+        <input
+          class="text-input"
+          type="email"
+          name="email"
+          id="name"
+          placeholder="Enter Your email"
+        />
+        <textarea
+          class="text-input"
+          name="text"
+          id="text"
+          cols="30"
+          rows="10"
+          placeholder="Your Concern"
+        ></textarea>
+        <button class="btn btn-dark">Submit</button>
+      </div>
     </section>
     <footer class="navpic">
-        <p class="text-footer">
-            Copyright &copy; 2020 - All rights reserved
-        </p>
+      <p class="text-footer">Copyright &copy; 2020 - All rights reserved</p>
     </footer>
     <script src="js/resp.js"></script>
     <!-- GetButton.io widget -->
-<script type="text/javascript">
-    (function () {
+    <script type="text/javascript">
+      (function () {
         var options = {
-            whatsapp: "+917765811317", // WhatsApp number
-            call_to_action: "Message us", // Call to action
-            position: "right", // Position may be 'right' or 'left'
+          whatsapp: '+917765811317', // WhatsApp number
+          call_to_action: 'Message us', // Call to action
+          position: 'right', // Position may be 'right' or 'left'
         };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-<!-- /GetButton.io widget -->
-
-</body>
-
+        var proto = document.location.protocol,
+          host = 'getbutton.io',
+          url = proto + '//static.' + host;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () {
+          WhWidgetSendButton.init(host, proto, options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      })();
+    </script>
+    <!-- /GetButton.io widget -->
+  </body>
 </html>
